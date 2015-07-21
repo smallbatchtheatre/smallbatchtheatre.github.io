@@ -1,12 +1,14 @@
-<button class="ui button">
-  Home
-</button>
-<button class="ui button">
-  Current
-</button>
-<button class="ui button">
-  Past
-</button>
-<button class="ui button">
-  Media
-</button>
+<a href="{{ "/" | prepend: site.baseurl }}">
+  <button class="ui button">
+    Home
+  </button>
+</a>
+{% for page in site.pages %}
+{% if page.title %}
+<a href="{{ page.url | prepend: site.baseurl }}">
+  <button class="ui button">
+    {{ page.title }}
+  </button>
+</a>
+{% endif %}
+{% endfor %}
