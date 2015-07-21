@@ -1,0 +1,95 @@
+body {
+    background-color: #faf3e6;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-wrapper {
+    width: 99%;
+    background: 
+    url('/img/img-lg-vert-border.png') repeat-y top left,
+    url('/img/img-lg-vert-border.png') repeat-y right 100px;
+    background-size: 0.75em;
+    margin: 0.5em auto;
+    padding: 0 2px;
+}
+
+.page-wrapper:before {
+    content: "";
+    height: 20px;
+    background: 
+    url('/img/img-lg-horiz-border.png') repeat-x 0 -2px;
+    background-size: 40em;
+    display: block;
+}
+
+.page-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo-large {
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.jumbotron {
+    background-color: inherit;
+}
+
+.separator {
+    height: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    background: url('/img/img-lg-horiz-border.png') repeat-x 0 -2px;
+    background-size: 40em;
+    display: block;
+}
+
+.title {
+    font-family: 'Special Elite', cursive;
+}
+
+.sidebar {
+    padding: 5px;
+    margin: 5px;
+	  -webkit-box-shadow: 0 6px 6px 6px #ccc;
+	  -moz-box-shadow: 0 6px 6px 6px #ccc;
+	  box-shadow: 0 6px 6px 6px #ccc;
+}
+
+.sidebar .button,
+.sidebar .button:focus,
+.sidebar .button:visited {
+    font-size: 14pt;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: inherit;
+    font-family: 'Special Elite', cursive;
+}
+
+.sidebar .button:hover {
+     background-color: #efe5d2;
+}
+
+.content {
+    margin: 0px 0px 0px 80px;
+    font-family: 'Merriweather', serif;
+    font-size: 12pt;
+}
+
+footer {
+    background: 
+    url('/img/img-lg-horiz-border.png') repeat-x bottom left;
+    background-size: 40em;
+    margin: 5.5em 1px -1px;
+    text-align: center;
+    padding-bottom: 8.5em;
+}
+
+/* Utilities */
+
+.centered {
+    text-align: center;
+}

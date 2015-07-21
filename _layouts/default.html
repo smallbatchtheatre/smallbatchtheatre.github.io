@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="page-wrapper">
+      <div class="ui container">
+        {% include header.html %}
+        <div class="separator"></div>
+        <div class="ui two column stackable grid">
+          <div class="three wide column sidebar">
+          {% include sidebar.html %}
+        </div>
+        <div class="nine wide column content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
