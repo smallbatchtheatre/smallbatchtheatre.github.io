@@ -92,6 +92,17 @@ img.pr-image {
     max-width: 400px;
 }
 
+/* Mobile */
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) {
+    .container {
+        padding: 20px;
+    }
+    .logo-large {
+        max-width: 200px;
+    }
+}
+
 /* Utilities */
 
 .centered {
