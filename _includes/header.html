@@ -1,4 +1,10 @@
 <div class="centered">
-  <img class="logo-large" src="{{ "/img/logo.png" | prepend:site.baseurl }}" alt="Small Batch Theatre" />
+  <img
+     class="logo-large"
+     sizes="(min-width: 40em) 80vw, 100vw"
+     srcset="{{ "/img/logo-small.png" | prepend:site.baseurl }} 375w,
+             {{ "/img/logo.png" | prepend:site.baseurl }} 480w,
+             {{ "/img/logo.png" | prepend:site.baseurl }} 768w"
+     alt="Small Batch Theatre">
 </div>
 
