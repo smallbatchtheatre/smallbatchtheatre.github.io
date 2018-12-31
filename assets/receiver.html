@@ -1,0 +1,25 @@
+<!-- SUB SUB PAGE (receiver) - domain sbt -->
+
+<html>
+    <body>
+        receiver
+    </body>
+    <script>
+     // check an instance ID here and in grandpa
+     var runSub = window.parent.parent.runSub;
+     window.onload = function init() {
+         var qs = window.location.href.split("?")[1];
+         if(!qs) {
+             return runSub({});
+         }
+         var params = qs
+             .split("&")
+             .reduce((memo, it) => {
+                 var keyVal = it.split("=");
+                 memo[keyVal[0]] = keyVal[1];
+                 return memo;
+             }, {});
+         runSub(params);
+     }
+    </script>
+</html>
